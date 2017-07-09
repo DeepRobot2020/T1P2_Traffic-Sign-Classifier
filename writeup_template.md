@@ -106,8 +106,8 @@ My final model results were:
 
 
 If a well known architecture was chosen:
-* What architecture was chosen? (LeNet, with more layers on first layer CNN)
-* Why did you believe it would be relevant to the traffic sign application? (The problems are similar: we are tring to classify images. However, the traffic sign problems have more details, that's why I add more layers in the first CNN layer )
+* What architecture was chosen? (LeNet, with more depth on first layer CNN)
+* Why did you believe it would be relevant to the traffic sign application? (The problems are similar: we are trying to classify images. However, the traffic sign problems have more details, that's why I add more depth in the first CNN layer )
 
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well (With epoches 30, I am able to achieve 0.94 prediction accuracy )?
  
@@ -121,7 +121,16 @@ Here are five German traffic signs that I found on the web:
 ![alt text][img1] ![alt text][img2] ![alt text][img3] 
 ![alt text][img4] ![alt text][img5]
 
-The first image might be difficult to classify because ...
+* For image 1, it might be diffculty as there are some trees in the background and that could make the prediction hard. 
+
+* For image 2, it might be diffculty as there are some trees in the background and that could make the prediction hard. 
+
+* For image 3, it might be diffculty  
+
+* For image 4, it might be diffculty as there are some trees in the background and that could make the prediction hard. 
+
+* For image 5, it might be diffculty as there are some trees in the background and that could make the prediction hard. 
+
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -135,7 +144,7 @@ Here are the results of the prediction:
 | Stop Sign	      		| Stop Sign					 				|
 | Double Curve			| Dangerous cure to right      							|
 
-The model was able to correctly guess 3 of the 5 traffic signs, which gives an accuracy of 60%. This result is wrose, compared to the prediction accuray on test dataset (93%). However, if the number of test images increase, the prediction accuray should be close to 93%. 
+The model was able to correctly guess 3 of the 5 traffic signs, which gives an accuracy of 60%. This result is wrose, compared to the prediction accuray on test dataset (93%). However, if the number of test images increase, the prediction accuray should be close to 93%. The reviewer also kindly pointed out that this might be caused by unblanced training data set and the issue can be resolved by adding jitter into traning dataset. I will try this trick later on. 
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
