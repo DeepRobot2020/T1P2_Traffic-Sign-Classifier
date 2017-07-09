@@ -123,13 +123,13 @@ Here are five German traffic signs that I found on the web:
 
 * For image 1, it might be diffculty as there are some trees in the background and that could make the prediction hard. 
 
-* For image 2, it might be diffculty as there are some trees in the background and that could make the prediction hard. 
+* For image 2, it might be diffculty as it is quite similar to other traffic signs such as 'End of no pass' and 'End of all speed and passing limits'. Also, inside the training dataset, we do not have enough training data compared to other traffic signs. The prediction on this traffic sign should be able to be improved by jittering the training set. 
 
-* For image 3, it might be diffculty  
+* For image 3, it should be easy to predict. However, as the phone was take with some degree of angles, this could potentially make the prediction hard.   
 
-* For image 4, it might be diffculty as there are some trees in the background and that could make the prediction hard. 
+* For image 4, it might be diffculty as there are some trees in the background and that could make the prediction hard. Also, as the original image size is 255x255x3 and my network was trained based on 32x32x3 training data set. After resizing the image to 32x32x3, many original details have lost and this could also make the prediction diffcult. 
 
-* For image 5, it might be diffculty as there are some trees in the background and that could make the prediction hard. 
+* For image 5, should be relatively easy to predict. If a trained network cannot even handle this image, that means you need re-revist your network.  
 
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
